@@ -20,14 +20,15 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | ---- | --------------- | ---- | ---------------------------------- |
 | 1    |muss             |Funktional|Als ein User möchte ich zufällige Zahlen erraten können.|
 | 2    |muss             |Funktional|Als ein User möchte ich, dass es eine Highscore-Liste gibt.|
-| 3    |muss             |Funktional|Als ein User möchte ich einen Zwei-Spieler Modus.|
-| 4    |muss             |Funktional|Als ein user möchte ich einen Command eingeben um alle möglichen commands ersichtlich zu sehen.|
-| 5    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu gross ist.|
-| 6    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist.|
-| 7    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe.|
-| 8    |kann             |Qualität  |Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen.|
-| 9    |kann             |Rand      |Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe.|
-| 10   |kann             |Rand      |Als ein User möchte ich, das der Bot auch Emojii-Reaktionen als Rückmeldung benutzt.|
+| 3    |kann             |Funktional|Als ein User möchte ich, dass ich meinen eigenen Highscore anzeigen lassen kann.|
+| 4    |muss             |Funktional|Als ein User möchte ich einen Zwei-Spieler Modus.|
+| 5    |muss             |Funktional|Als ein user möchte ich einen Command eingeben um alle möglichen commands ersichtlich zu sehen.|
+| 6    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu gross ist.|
+| 7    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist.|
+| 8    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe.|
+| 9    |kann             |Qualität  |Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen.|
+| 10    |kann             |Rand      |Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe.|
+| 11   |kann             |Rand      |Als ein User möchte ich, das der Bot auch Emojii-Reaktionen als Rückmeldung benutzt.|
 
 ### 1.3 Testfälle
 
@@ -36,7 +37,7 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 1.1  |Bot ist angeschalten|§g <random number>|Der Bot gibt eine Nachricht, die diese Eingabe als gültig bezeichnet.|
 | 1.2  |Bot ist angeschalten|§g <random letter>|Bot gibt eine Nachricht, die diese Eingabe als ungültig bezeichnet.|
 | 2.1  |Bot ist angeschalten|§highscore|Der Bot gibt eine Rangliste mit den 10 Personen, die am meisten Punkte haben.|
-| ...  |              |         |                   |
+| 2.2  |Bot ist angeschalten|§highscore <username>|Der Bot gibt eine Nachricht mit der Person und dessen Punkte an.|
 | ...  |              |         |                   |
 | ...  |              |         |                   |
 | ...  |              |         |                   |
