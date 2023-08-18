@@ -1,0 +1,8 @@
+﻿namespace DiscordBot
+{
+    class highscore
+    { 
+    
+    }
+
+}
