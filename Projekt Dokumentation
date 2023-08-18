@@ -33,8 +33,8 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |Bot ist angeschalten|zufällige Nummer|Der Bot gibt eine positive Rückmeldung.|
-| 1.2  |Bot ist angeschalten|irgendein Buchstabe|Bot gibt keine Reaktion zurück.|
+| 1.1  |Bot ist angeschalten|§g <random number>|Der Bot gibt eine Nachricht, die diese Eingabe als gültig bezeichnet.|
+| 1.2  |Bot ist angeschalten|§g <random letter>|Bot gibt eine Nachricht, die diese Eingabe als ungültig bezeichnet.|
 | 2.1  |Bot ist angeschalten|§highscore|Der Bot gibt eine Rangliste mit den 10 Personen, die am meisten Punkte haben.|
 | ...  |              |         |                   |
 | ...  |              |         |                   |
