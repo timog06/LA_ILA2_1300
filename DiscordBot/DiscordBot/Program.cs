@@ -42,9 +42,20 @@ namespace DiscordBot
         private static Task ClientOnMessageReceived(SocketMessage arg)
         {
 
-            if (arg.Content.StartsWith("!helloworld"))
+            if (arg.Content.Contains("!"))
             {
-                arg.Channel.SendMessageAsync($"User '{arg.Author.Username}' successfully ran helloworld!");
+                //arg.Channel.SendMessageAsync($"User '{arg.Author.Username}' successfully ran helloworld!");
+
+                switch (arg.Content.ToLower().TrimStart())
+                {
+                    case "rnd":
+                        Randomnuberguesser game = new();
+                        Randomnuberguesser.MainGame();    
+                        break;
+                    case "g":
+                        game
+                        break;
+                }
             }
 
             return Task.CompletedTask;

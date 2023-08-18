@@ -2,7 +2,7 @@
 {
     class Randomnuberguesser
     {
-        static void MainGame()
+        public static void MainGame()
         {
             int num = NumberGeneration();
             
