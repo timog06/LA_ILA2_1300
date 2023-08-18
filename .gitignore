@@ -396,6 +396,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-
-#Tokenfile
-DiscordBot/DiscordBot/Token.txt
