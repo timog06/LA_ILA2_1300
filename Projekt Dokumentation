@@ -22,11 +22,11 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 3    |muss             |Funktional|Als ein User möchte ich, dass es eine Highscore-Liste gibt.|
 | 4    |muss             |Funktional|Als ein User möchte ich einen Zwei-Spieler Modus.|
 | 5    |muss             |Funktional|Als ein user möchte ich einen Command eingeben um alle möglichen commands ersichtlich zu sehen.|
-| 6    |             |      |Als User möchte ich ein Feedback, wenn meine Zahl zu gross ist.|
-| 7    |             |      |Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist.|
+| 6    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu gross ist.|
+| 7    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist.|
 | 8    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe.|
-| 9    |                 |Qualität|Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen.|
-| 10   |                 |      |                                    |
+| 9    |kann             |Qualität|Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen.|
+| 10   |kann             |Rand|Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe.|
 
 ### 1.3 Testfälle
 
