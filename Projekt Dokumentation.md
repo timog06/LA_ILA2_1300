@@ -22,7 +22,7 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 2    |muss             |Funktional|Als ein User möchte ich, dass es eine Highscore-Liste gibt.|
 | 3    |kann             |Funktional|Als ein User möchte ich, dass ich meinen eigenen Highscore anzeigen lassen kann.|
 | 4    |muss             |Funktional|Als ein User möchte ich einen Zwei-Spieler Modus.|
-| 5    |muss             |Funktional|Als ein user möchte ich einen Command eingeben um alle möglichen commands ersichtlich zu sehen.|
+| 5    |muss             |Funktional|Als ein user möchte ich einen Befehl eingeben um alle möglichen Befehle ersichtlich zu sehen.|
 | 6    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu gross ist.|
 | 7    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist.|
 | 8    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe.|
@@ -35,17 +35,20 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |Bot ist angeschalten|§g [random number]|Der Bot gibt eine Nachricht, die diese Eingabe als gültig bezeichnet.|
-| 1.2  |Bot ist angeschalten|§g [random letter]|Bot gibt eine Nachricht, die diese Eingabe als ungültig bezeichnet.|
-| 2.1  |Bot ist angeschalten|§highscore|Der Bot gibt eine Rangliste mit den 10 Personen, die am meisten Punkte haben.|
-| 3.1  |Bot ist angeschalten|§highscore [username]|Der Bot gibt eine Nachricht mit der Person und dessen Punkte an.|
-| 3.2  |Bot ist angeschalten|§highscore [invalid username]|Der Bot gibt eine Nachricht, die sagt, dass es den User nicht gibt.|
-| 4.1  |Bot ist angeschalten|§playertwo [username]|Der Bot macht @[username] und sagt diesem, eine Zahl zwischen 1 und 100 auszuwählen.|
-| ...  |              |         |                   |
-| ...  |              |         |                   |
-| ...  |              |         |                   |
-| ...  |              |         |                   |
-| ...  |              |         |                   |
+| 1.1  |Bot ist angeschalten|§g [random number]|Der Bot gibt eine Nachricht aus, die diese Eingabe als gültig bezeichnet.|
+| 1.2  |Bot ist angeschalten|§g [random letter]|Bot gibt eine Nachricht aus, die diese Eingabe als ungültig bezeichnet.|
+| 2.1  |Bot ist angeschalten|§highscorelsit|Der Bot gibt eine Rangliste mit den 10 Personen aus, die am meisten Punkte haben.|
+| 3.1  |Bot ist angeschalten|§highscore [username]|Der Bot gibt eine Nachricht mit der Person und dessen Punkte aus.|
+| 3.2  |Bot ist angeschalten|§highscore [invalid username]|Der Bot gibt eine Nachricht aus, die sagt, dass es den User nicht gibt.|
+|!4.1! |Bot ist angeschalten|§playertwo [username]|Der Bot macht @[username] und sagt diesem, eine Zahl zwischen 1 und 100 auszuwählen.|
+| 5.1  |Bot ist angeschalten|§help|Der Bot gibt eine List an Befehlen aus.|
+| 6.1  |Bot ist angeschalten|§g [zu grosse Zahl]|Der Bot gibt eine Nachricht aus, die dem User sagt das seine Zahl zu gross ist.|
+| 7.1  |Bot ist angeschalten|§g [zu kleine Zahl]|Der Bot gibt eine Nachricht aus, die dem User sagt das seine Zahl zu klein ist.|
+| 8.1  |Bot ist angeschalten|§g [korrekte Zahl]|Der Bot gibt eine Nachricht aus, die dem User sagt das er die Zahl erraten hat.|
+| 10.1 |Bot ist angeschalten|-|Der User mit den meisten Punkten erhält die Rolle: [Best Guesser]|
+| 11.1 |Bot ist angeschalten|Irgendein Befehl|Der Bot reagiert mit "[Emoji]".|
+| 12.1 |Bot ist angeschalten|Irgend ein existierender Befehl mit §|Der Bot erkennt den Befehl und gibt die gewollte antwort aus.|
+| 12.1 |Bot ist angeschalten|Irgend ein existierender Befehl mit falschem vorzeichen|Der Bot erkennt den Befehl nicht und macht nichts.|
 
 ### 1.4 Diagramme
 
