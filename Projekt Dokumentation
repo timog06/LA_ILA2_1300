@@ -4,7 +4,7 @@
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|18.08.2023| 0.0.1||
+|18.08.2023| 0.0.1| Wir haben mit dem Projekt angefangen und den Bot erstellt.|
 || ...     ||
 || 1.0.0   ||
 
@@ -18,10 +18,15 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
-
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
+| 1    |muss             |funktional| Als ein User möchte ich zufällige Zahlen erraten können |
+| 3    |                 |      |                                    |
+| 4    |                 |      |                                    |
+| 5    |                 |      |                                    |
+| 6    |                 |      |                                    |
+| 7    |                 |      |                                    |
+| 8    |                 |      |                                    |
+| 9    |                 |      |                                    |
+| 10   |                 |      |                                    |
 
 ### 1.3 Testfälle
 
