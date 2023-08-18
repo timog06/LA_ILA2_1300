@@ -4,9 +4,9 @@
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|18.08.2023| 0.0.1| Wir haben mit dem Projekt angefangen und den Bot erstellt.|
-|| ...     ||
-|| 1.0.0   ||
+|18.08.2023|0.0.1| Wir haben mit dem Projekt angefangen und den Bot erstellt und aufgesetzt.|
+||||
+||||
 
 ## 1 Informieren
 
@@ -35,7 +35,7 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | ---- | ------------ | ------- | ----------------- |
 | 1.1  |Bot ist angeschalten|zufällige Nummer|Der Bot gibt eine positive Rückmeldung.|
 | 1.2  |Bot ist angeschalten|irgendein Buchstabe|Bot gibt keine Reaktion zurück.|
-| ...  |              |         |                   |
+| 2.1  |Bot ist angeschalten|§highscore|Der Bot gibt eine Rangliste mit den 10 Personen, die am meisten Punkte haben.|
 | ...  |              |         |                   |
 | ...  |              |         |                   |
 | ...  |              |         |                   |
