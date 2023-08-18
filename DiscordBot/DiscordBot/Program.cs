@@ -42,18 +42,34 @@ namespace DiscordBot
         private static Task ClientOnMessageReceived(SocketMessage arg)
         {
 
-            if (arg.Content.Contains("!"))
+            if (arg.Content.StartsWith("§"))
             {
                 //arg.Channel.SendMessageAsync($"User '{arg.Author.Username}' successfully ran helloworld!");
+                string[] command = arg.Content.Split('§');
 
-                switch (arg.Content.ToLower().TrimStart())
+                switch (command[1])
                 {
                     case "rnd":
-                        Randomnuberguesser game = new();
-                        Randomnuberguesser.MainGame();    
+                        Random rnd = new();
+                        Randomnuberguesser game = new() { randomNumber = rnd.Next(1, 101)};
+                        arg.Channel.SendMessageAsync($"Successfully Created random number, you can guess now:");
                         break;
                     case "g":
-                        game
+                        string[] guess = command[1].Split(' ');
+                        if (Convert.ToInt32(guess[1]) > game.randomNumber)
+                        {
+                            arg.Channel.SendMessageAsync();
+                        }
+                        break;
+
+                    case "highscorelist":
+
+                        break;
+                    case "highscore @username":
+
+                        break;
+                    case "help":
+
                         break;
                 }
             }
