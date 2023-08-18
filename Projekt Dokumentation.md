@@ -27,8 +27,9 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 7    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist.|
 | 8    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe.|
 | 9    |kann             |Qualität  |Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen.|
-| 10    |kann             |Rand      |Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe.|
+| 10   |kann             |Rand      |Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe.|
 | 11   |kann             |Rand      |Als ein User möchte ich, das der Bot auch Emojii-Reaktionen als Rückmeldung benutzt.|
+| 12   |muss             |Qualität  |Der Bot benutzt das Zeichen <§> als Befehl anfang.|
 
 ### 1.3 Testfälle
 
