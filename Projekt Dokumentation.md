@@ -35,12 +35,12 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |Bot ist angeschalten|§g <random number>|Der Bot gibt eine Nachricht, die diese Eingabe als gültig bezeichnet.|
-| 1.2  |Bot ist angeschalten|§g <random letter>|Bot gibt eine Nachricht, die diese Eingabe als ungültig bezeichnet.|
+| 1.1  |Bot ist angeschalten|§g [random number]|Der Bot gibt eine Nachricht, die diese Eingabe als gültig bezeichnet.|
+| 1.2  |Bot ist angeschalten|§g [random letter]|Bot gibt eine Nachricht, die diese Eingabe als ungültig bezeichnet.|
 | 2.1  |Bot ist angeschalten|§highscore|Der Bot gibt eine Rangliste mit den 10 Personen, die am meisten Punkte haben.|
-| 2.2  |Bot ist angeschalten|§highscore <username>|Der Bot gibt eine Nachricht mit der Person und dessen Punkte an.|
-| ...  |              |         |                   |
-| ...  |              |         |                   |
+| 3.1  |Bot ist angeschalten|§highscore [username]|Der Bot gibt eine Nachricht mit der Person und dessen Punkte an.|
+| 3.2  |Bot ist angeschalten|§highscore [invalid username]|Der Bot gibt eine Nachricht, die sagt, dass es den User nicht gibt.|
+| 4.1  |Bot ist angeschalten|§player two [username]|Der Bot macht @[username] und sagt diesem, eine Zahl zwischen 1 und 100 auszuwählen.|
 | ...  |              |         |                   |
 | ...  |              |         |                   |
 | ...  |              |         |                   |
