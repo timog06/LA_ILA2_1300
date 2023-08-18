@@ -19,23 +19,31 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
 | 1    |muss             |Funktional|Als ein User möchte ich zufällige Zahlen erraten können.|
-| 3    |muss             |Funktional|Als ein User möchte ich, dass es eine Highscore-Liste gibt.|
-| 4    |muss             |Funktional|Als ein User möchte ich einen Zwei-Spieler Modus.|
-| 5    |muss             |Funktional|Als ein user möchte ich einen Command eingeben um alle möglichen commands ersichtlich zu sehen.|
-| 6    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu gross ist.|
-| 7    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist.|
-| 8    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe.|
-| 9    |kann             |Qualität|Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen.|
-| 10   |kann             |Rand|Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe.|
+| 2    |muss             |Funktional|Als ein User möchte ich, dass es eine Highscore-Liste gibt.|
+| 3    |muss             |Funktional|Als ein User möchte ich einen Zwei-Spieler Modus.|
+| 4    |muss             |Funktional|Als ein user möchte ich einen Command eingeben um alle möglichen commands ersichtlich zu sehen.|
+| 5    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu gross ist.|
+| 6    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist.|
+| 7    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe.|
+| 8    |kann             |Qualität  |Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen.|
+| 9    |kann             |Rand      |Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe.|
+| 10   |kann             |Rand      |Als ein User möchte ich, das der Bot auch Emojii-Reaktionen als Rückmeldung benutzt.|
 
 ### 1.3 Testfälle
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
+| 1.1  |Bot ist angeschalten|zufällige Nummer|Der Bot gibt eine positive Rückmeldung.|
+| 1.2  |Bot ist angeschalten|irgendein Buchstabe|Bot gibt keine Reaktion zurück.|
 | ...  |              |         |                   |
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
+| ...  |              |         |                   |
+| ...  |              |         |                   |
+| ...  |              |         |                   |
+| ...  |              |         |                   |
+| ...  |              |         |                   |
+| ...  |              |         |                   |
+| ...  |              |         |                   |
+| ...  |              |         |                   |
 
 ### 1.4 Diagramme
 
