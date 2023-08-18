@@ -40,7 +40,7 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 2.1  |Bot ist angeschalten|§highscore|Der Bot gibt eine Rangliste mit den 10 Personen, die am meisten Punkte haben.|
 | 3.1  |Bot ist angeschalten|§highscore [username]|Der Bot gibt eine Nachricht mit der Person und dessen Punkte an.|
 | 3.2  |Bot ist angeschalten|§highscore [invalid username]|Der Bot gibt eine Nachricht, die sagt, dass es den User nicht gibt.|
-| 4.1  |Bot ist angeschalten|§player two [username]|Der Bot macht @[username] und sagt diesem, eine Zahl zwischen 1 und 100 auszuwählen.|
+| 4.1  |Bot ist angeschalten|§playertwo [username]|Der Bot macht @[username] und sagt diesem, eine Zahl zwischen 1 und 100 auszuwählen.|
 | ...  |              |         |                   |
 | ...  |              |         |                   |
 | ...  |              |         |                   |
