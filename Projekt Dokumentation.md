@@ -28,8 +28,7 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 8    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe.|
 | 9    |kann             |Qualität  |Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen.|
 | 10   |kann             |Rand      |Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe.|
-| 11   |kann             |Rand      |Als ein User möchte ich, das der Bot auch Emojii-Reaktionen als Rückmeldung benutzt.|
-| 12   |muss             |Qualität  |Der Bot benutzt das Zeichen <§> als Befehl anfang.|
+| 11   |muss             |Qualität  |Der Bot benutzt das Zeichen <§> als Befehl anfang.|
 
 ### 1.3 Testfälle
 
@@ -40,7 +39,8 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 2.1  |Bot ist angeschalten|§highscorelsit|Der Bot gibt eine Rangliste mit den 10 Personen aus, die am meisten Punkte haben.|
 | 3.1  |Bot ist angeschalten|§highscore [username]|Der Bot gibt eine Nachricht mit der Person und dessen Punkte aus.|
 | 3.2  |Bot ist angeschalten|§highscore [invalid username]|Der Bot gibt eine Nachricht aus, die sagt, dass es den User nicht gibt.|
-|!4.1! |Bot ist angeschalten|§playertwo [username]|Der Bot macht @[username] und sagt diesem, eine Zahl zwischen 1 und 100 auszuwählen.|
+| 4.1  |Bot ist angeschalten|§playertwo [username]|Der Bot macht @[username] und sagt diesem, eine Zahl zwischen 1 und 100 auszuwählen.|
+| 4.2  |Bot ist angeschalten|$number [number between 1 and 100]| Der Bot macht eine Ausgabe, die dem ersten Spieler sagt, dass er raten soll.|
 | 5.1  |Bot ist angeschalten|§help|Der Bot gibt eine List an Befehlen aus.|
 | 6.1  |Bot ist angeschalten|§g [zu grosse Zahl]|Der Bot gibt eine Nachricht aus, die dem User sagt das seine Zahl zu gross ist.|
 | 7.1  |Bot ist angeschalten|§g [zu kleine Zahl]|Der Bot gibt eine Nachricht aus, die dem User sagt das seine Zahl zu klein ist.|
@@ -58,19 +58,23 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |25.08.2023|Julius Burlet|Der Bot soll zufällige Zahlen generieren können, die dann vom User erraten werden kann.| 10' |
-| 2.A  |25.08.2023|Timo Goedertier|Beim richtigen erraten einer Zahl wird dem User Punkte verliehen und auf dem User gespeichert.| 20' |
-| 2.B  |25.08.2023|Timo Goedertier|Der Bot gibt eine Liste aus mit den 10 User im Server, die am meisten Punkte haben.| 10' |
-
-Total: 
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
-
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
+| 1.A  |25.08.2023|Julius Burlet|Der Bot soll zufällige Zahlen generieren können, die dann vom User erraten werden kann.| 15' |
+| 2.A  |01.09.2023|Timo Goedertier|Beim richtigen erraten einer Zahl wird dem User Punkte verliehen und auf dem User gespeichert.| 30' |
+| 2.B  |01.09.2023|Timo Goedertier|Der Bot gibt eine Liste aus mit den 10 User im Server, die am meisten Punkte haben.| 25' |
+| 3.A  |01.09.2023|Timo Goedertier|Der Bot gibt auf Behfel den Name des gewählten Users aus mit seiner Punkte Zahl.| 15' |
+| 4.A  |08.09.2023|Julius Burlet|Der Bot soll einen funktionierender 2-Spieler Modus haben.| 30' |
+| 5.A  |25.08.2023|Timo Goedertier|Beim Eingeben des Befehls werden alle möglichen von diesem Bot in einer Liste gezeigt.| 30' |
+| 6.A  |25.08.2023|Julius Burlet|Der Bot gibt ein Feedback, wenn die Zahl zu gross ist.| 10' |
+| 7.A  |25.08.2023|Julius Burlet|Der Bot gibt ein Feedback, wenn die Zahl zu klein ist.| 10' |
+| 8.A  |25.08.2023|Julius Burlet|Der Bot gibt ein Feedback, wenn die Zahl erraten wurde.| 10' |
+| 9.A  |08.09.2023|Julius Burlet/Timo Goedertier|Das Design des Bots und seine Nachrichten sehen gut aus.| 30' |
+| 10.A |01.09.2023|Timo Goedertier|Der Bot erstellt die gewollte Rolle, wenn er einem Server beitretet.| 20' |
+| 10.B |01.09.2023|Timo Goedertier|Der Bot gibt dem Spieler mit den meisten Punkte die Rolle.| 35' |
+| 11.A |08.09.2023|Julius Burlet|Alle Befehle des Bots fangen mit § an.| 5' |
 
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+Wir haben uns entschieden, den Random Number Guesser als Discord Bot zu machen, damit wir eine einfachere Methode des Mehrspieler-Modus zu implementieren. Ausserdem, können verschiedene Spieler dadurch Kompetitiv gegeneinander antreten.
 
 ## 4 Realisieren
 
