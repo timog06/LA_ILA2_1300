@@ -58,8 +58,9 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+| 1.A  |25.08.2023|Julius Burlet|Der Bot soll zufällige Zahlen generieren können, die dann vom User erraten werden kann.| 10' |
+| 2.A  |25.08.2023|Timo Goedertier|Beim richtigen erraten einer Zahl wird dem User Punkte verliehen und auf dem User gespeichert.| 20' |
+| 2.B  |25.08.2023|Timo Goedertier|Der Bot gibt eine Liste aus mit den 10 User im Server, die am meisten Punkte haben.| 10' |
 
 Total: 
 
