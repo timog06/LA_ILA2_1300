@@ -41,6 +41,7 @@ public class filegrabber
     {
         public string id { get; set; }
         public string username { get; set; }
+        public string displayname { get; set; }
         public int points { get; set; }
     }
 

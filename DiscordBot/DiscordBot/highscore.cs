@@ -1,8 +1,11 @@
-﻿namespace DiscordBot
+﻿using Discord;
+using static filegrabber;
+
+namespace DiscordBot
 {
-    class highscore
+    public class Highscore
     { 
-     
+
     }
 
 }
