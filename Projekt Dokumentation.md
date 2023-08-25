@@ -96,6 +96,29 @@ Wir haben uns entschieden, den Random Number Guesser als Discord Bot zu machen, 
 
 Das Skelet, des Bots haben wir von hier: https://moodle.bbbaden.ch/mod/resource/view.php?id=132758
 
+Im case "highscore" haben wir die Art, wie die Eingabe getrimmt von GPT:
+```cs
+if (command.Length > 1 && command[1].StartsWith("<@") && command[1].EndsWith(">"))
+                    {
+                        targetUserId = command[1].TrimStart('<', '@', '!').TrimEnd('>');
+                    }
+                    else
+                    {
+                        targetUserId = arg.Author.Id.ToString();
+                    }
+
+                    var targetUser = UserData.LoadUsers().GetValueOrDefault(targetUserId);
+
+                    if (targetUser != null)
+                    {
+                        arg.Channel.SendMessageAsync($"{targetUser.displayname} has {targetUser.points} points.");
+                    }
+                    else
+                    {
+                        arg.Channel.SendMessageAsync("User has no points recorded.");
+                    }
+```
+
 ## 5 Kontrollieren
 
 ### 5.1 Testprotokoll
