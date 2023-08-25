@@ -1,6 +1,6 @@
 ﻿namespace DiscordBot
 {
-    class Randomnuberguesser
+    public class Randomnumberguesser
     {
         public int randomNumber { get; init; }
     }

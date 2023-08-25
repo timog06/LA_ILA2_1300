@@ -10,8 +10,10 @@ namespace DiscordBot
 {
     class Program
     {
+        private static CommandProcessor commandProcessor = new CommandProcessor();
         public static void Main(string[] args)
         => new Program().MainAsync().GetAwaiter().GetResult();
+        
 
         private DiscordSocketClient _client;
 
@@ -32,7 +34,7 @@ namespace DiscordBot
             // Enter your token here, or better still, read it from file
 
             var token = File.ReadAllText("Token.txt");
-
+                
             await _client.LoginAsync(TokenType.Bot, token);
             await _client.StartAsync();
 
@@ -41,37 +43,10 @@ namespace DiscordBot
         }
         private static Task ClientOnMessageReceived(SocketMessage arg)
         {
-
+            
             if (arg.Content.StartsWith("§"))
             {
-                //arg.Channel.SendMessageAsync($"User '{arg.Author.Username}' successfully ran helloworld!");
-                string[] command = arg.Content.Split('§');
-
-                switch (command[1])
-                {
-                    case "rnd":
-                        Random rnd = new();
-                        Randomnuberguesser game = new() { randomNumber = rnd.Next(1, 101)};
-                        arg.Channel.SendMessageAsync($"Successfully Created random number, you can guess now:");
-                        break;
-                    case "g":
-                        string[] guess = command[1].Split(' ');
-                        if (Convert.ToInt32(guess[1]) > game.randomNumber)
-                        {
-                            arg.Channel.SendMessageAsync();
-                        }
-                        break;
-
-                    case "highscorelist":
-
-                        break;
-                    case "highscore @username":
-
-                        break;
-                    case "help":
-
-                        break;
-                }
+                commandProcessor.Choosing(arg);
             }
 
             return Task.CompletedTask;
