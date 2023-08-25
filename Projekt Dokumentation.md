@@ -96,27 +96,12 @@ Wir haben uns entschieden, den Random Number Guesser als Discord Bot zu machen, 
 
 Das Skelet, des Bots haben wir von hier: https://moodle.bbbaden.ch/mod/resource/view.php?id=132758
 
-Im case "highscore" haben wir die Art, wie die Eingabe getrimmt von GPT:
+Im case "highscore" haben wir die Art, wie die Eingabe getrimmt von ChatGPT, nicht das Parse:
 ```cs
-if (command.Length > 1 && command[1].StartsWith("<@") && command[1].EndsWith(">"))
-                    {
-                        targetUserId = command[1].TrimStart('<', '@', '!').TrimEnd('>');
-                    }
-                    else
-                    {
-                        targetUserId = arg.Author.Id.ToString();
-                    }
-
-                    var targetUser = UserData.LoadUsers().GetValueOrDefault(targetUserId);
-
-                    if (targetUser != null)
-                    {
-                        arg.Channel.SendMessageAsync($"{targetUser.displayname} has {targetUser.points} points.");
-                    }
-                    else
-                    {
-                        arg.Channel.SendMessageAsync("User has no points recorded.");
-                    }
+if (unParsedUserID.Length > 1 && unParsedUserID[1].StartsWith("<@") && unParsedUserID[1].EndsWith(">"))
+            {
+                return unParsedUserID[1].TrimStart('<', '@', '!').TrimEnd('>');
+            }
 ```
 Den filePath im LoadSaveUsers.cs wurde von ChatGPT generiert, damit das Programm auf userpoints.json im bin vom Projektordner zugreifen kann.
 ```cs
