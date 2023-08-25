@@ -5,7 +5,7 @@
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
 |18.08.2023|0.0.1| Wir haben mit dem Projekt angefangen und den Bot erstellt und aufgesetzt.|
-||||
+|25.08.2023|0.1.0| Der Bot funktioniert jetzt und hat schon seine ersten funktionen.|
 ||||
 
 ## 1 Informieren
@@ -52,7 +52,8 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 
 ### 1.4 Diagramme
 
-✍️ Hier können Sie PAPs, Use Case- und Gantt-Diagramme oder Ähnliches einfügen.
+![DiscordBotDiagramm drawio](https://github.com/timog06/LA_ILA2_1300/assets/110891995/7deb71c8-b36b-4fd6-b328-f5c11614bf31)
+
 
 ## 2 Planen
 
