@@ -62,7 +62,8 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 1.A  |25.08.2023|Julius Burlet|Der Bot soll zufällige Zahlen generieren können, die dann vom User erraten werden kann.| 15' |
 | 2.A  |01.09.2023|Timo Goedertier|Beim richtigen erraten einer Zahl wird dem User Punkte verliehen und auf dem User gespeichert.| 30' |
 | 2.B  |01.09.2023|Timo Goedertier|Der Bot gibt eine Liste aus mit den 10 User im Server, die am meisten Punkte haben.| 25' |
-| 3.A  |01.09.2023|Timo Goedertier|Der Bot gibt auf Behfel den Name des gewählten Users aus mit seiner Punkte Zahl.| 15' |
+| 3.A  |01.09.2023|Timo Goedertier|Der Bot gibt auf Behfel den Name des Users, der den Befehl eingegeben hat aus mit seiner Punkte Zahl.| 25' |
+| 3.B  |01.09.2023|Timo Goedertier|Der Bot gibt auf Behfel den Name des gewählten Users aus mit seiner Punkte Zahl.| 15' |
 | 4.A  |08.09.2023|Julius Burlet|Der Bot soll einen funktionierender 2-Spieler Modus haben.| 30' |
 | 5.A  |25.08.2023|Timo Goedertier|Beim Eingeben des Befehls werden alle möglichen von diesem Bot in einer Liste gezeigt.| 30' |
 | 6.A  |25.08.2023|Julius Burlet|Der Bot gibt ein Feedback, wenn die Zahl zu gross ist.| 10' |
@@ -82,7 +83,13 @@ Wir haben uns entschieden, den Random Number Guesser als Discord Bot zu machen, 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
 | 1.A  |25.08.2023|Julius Burlet| 15' | 10' |
-| ...  |       |           |               |                   |
+| 2.A  |25.08.2023|Timo Goedertier| 30' | 45' |
+| 2.B  |25.08.2023|Timo Goedertier| 25' | 15' |
+| 3.A  |25.08.2023|Timo Goedertier| 15' | 20' |
+| 6.A  |25.08.2023|Julius Burlet| 10' | 5' |
+| 7.A  |25.08.2023|Julius Burlet| 10' | 5' |
+| 8.A  |25.08.2023|Julius Burlet| 10' | 5' |
+
 
 ### 4.1 Quellen
 
