@@ -118,6 +118,11 @@ if (command.Length > 1 && command[1].StartsWith("<@") && command[1].EndsWith(">"
                         arg.Channel.SendMessageAsync("User has no points recorded.");
                     }
 ```
+Den filePath im LoadSaveUsers.cs wurde von ChatGPT generiert, damit das Programm auf userpoints.json im bin vom Projektordner zugreifen kann.
+```cs
+private static readonly string filePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "userpoints.json");
+```
+Das ```using System.Text.Json.Serialization;``` wurde von ChatGPT generiert, wie auch die Teile davon im Code.
 
 ## 5 Kontrollieren
 
