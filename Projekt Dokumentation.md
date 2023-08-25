@@ -80,7 +80,7 @@ Wir haben uns entschieden, den Random Number Guesser als Discord Bot zu machen, 
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
+| 1.A  |25.08.2023|Julius Burlet| 15' | 10' |
 | ...  |       |           |               |                   |
 
 ### 4.1 Quellen
