@@ -86,6 +86,7 @@ Wir haben uns entschieden, den Random Number Guesser als Discord Bot zu machen, 
 | 2.A  |25.08.2023|Timo Goedertier| 30' | 45' |
 | 2.B  |25.08.2023|Timo Goedertier| 25' | 15' |
 | 3.A  |25.08.2023|Timo Goedertier| 15' | 20' |
+| 3.B  |01.09.2023|Timo Goedertier| 15' | 10' |
 | 6.A  |25.08.2023|Julius Burlet| 10' | 5' |
 | 7.A  |25.08.2023|Julius Burlet| 10' | 5' |
 | 8.A  |25.08.2023|Julius Burlet| 10' | 5' |
