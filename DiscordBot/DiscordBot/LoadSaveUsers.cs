@@ -6,7 +6,6 @@ using System.Text.Json.Serialization;
 
 public class filegrabber
 {
-    
 
     public static class UserData
     {

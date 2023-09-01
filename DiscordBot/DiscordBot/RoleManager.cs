@@ -1,45 +1,36 @@
 ﻿using Discord.WebSocket;
-using System.Linq;
-using System.Threading.Tasks;
+using Discord;
+using static filegrabber;
 
-public class RoleManager
+namespace DiscordBot
 {
-    private readonly SocketGuild _guild;
-
-    public RoleManager(SocketGuild guild)
+    class RoleManager
     {
-        _guild = guild ?? throw new ArgumentNullException(nameof(guild));
-    }
+        private SocketGuild _guild = null;
 
-    public async Task<bool> AssignRoleToUserAsync(ulong userId, string roleName)
-    {
-        var user = _guild.GetUser(userId);
-        var role = _guild.Roles.FirstOrDefault(x => x.Name == roleName);
-
-        if (user != null && role != null)
+        public RoleManager(SocketGuild guild)
         {
-            if (!user.Roles.Contains(role))
+            _guild = guild;
+        }
+
+        public async Task AssignKingRole()
+        {
+            Dictionary<string, User> users = UserData.LoadUsers();
+            User topUser = users.Values.OrderByDescending(userpoints => userpoints.points).FirstOrDefault();
+
+            if (topUser != null)
             {
-                await user.AddRoleAsync(role);
-                return true;
+                SocketGuildUser guildUser = _guild.GetUser(ulong.Parse(topUser.id));
+                if (guildUser != null)
+                {
+                    IRole kingRole = _guild.Roles.FirstOrDefault(r => r.Name == "KOTNG");
+                    if (kingRole == null)
+                    {
+                        kingRole = await _guild.CreateRoleAsync("KOTNG", GuildPermissions.None, null, false, false, null);
+                    }
+                    await guildUser.AddRoleAsync(kingRole);
+                }
             }
         }
-        return false;
-    }
-
-    public async Task<bool> RemoveRoleFromUserAsync(ulong userId, string roleName)
-    {
-        var user = _guild.GetUser(userId);
-        var role = _guild.Roles.FirstOrDefault(x => x.Name == roleName);
-
-        if (user != null && role != null)
-        {
-            if (user.Roles.Contains(role))
-            {
-                await user.RemoveRoleAsync(role);
-                return true;
-            }
-        }
-        return false;
     }
 }
