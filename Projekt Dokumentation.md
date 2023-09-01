@@ -18,17 +18,17 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |muss             |Funktional|Als ein User möchte ich zufällige Zahlen erraten können.|
-| 2    |muss             |Funktional|Als ein User möchte ich, dass es eine Highscore-Liste gibt.|
-| 3    |kann             |Funktional|Als ein User möchte ich, dass ich meinen eigenen Highscore anzeigen lassen kann.|
-| 4    |muss             |Funktional|Als ein User möchte ich einen Zwei-Spieler Modus.|
-| 5    |muss             |Funktional|Als ein user möchte ich einen Befehl eingeben um alle möglichen Befehle ersichtlich zu sehen.|
-| 6    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu gross ist.|
-| 7    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist.|
-| 8    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe.|
-| 9    |kann             |Qualität  |Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen.|
-| 10   |kann             |Rand      |Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe.|
-| 11   |muss             |Qualität  |Der Bot benutzt das Zeichen <§> als Befehl anfang.|
+| 1    |muss             |Funktional|Als ein User möchte ich zufällige Zahlen erraten können, damit mein Leben endlich einen Sinn hat.|
+| 2    |muss             |Funktional|Als ein User möchte ich, dass es eine Highscore-Liste gibt, damit ich sehen kann, wie ich gerade stehe.|
+| 3    |kann             |Funktional|Als ein User möchte ich, dass ich meinen eigenen Highscore anzeigen lassen kann, damit ich einfach sehe wie viele Punkte ich habe.|
+| 4    |muss             |Funktional|Als ein User möchte ich einen Zwei-Spieler Modus, damit ich Zahlen meiner Freunde erraten kann.|
+| 5    |muss             |Funktional|Als ein user möchte ich einen Befehl eingeben um alle möglichen Befehle ersichtlich zu sehen, damit ich nicht zehn Jahre tüfteln muss, bis ich alle Befehle kenne.|
+| 6    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu gross ist, damit ich die Zahl erraten kann.|
+| 7    |muss             |Funktional|Als User möchte ich ein Feedback, wenn meine Zahl zu klein ist, damit ich die Zahl erraten kann.|
+| 8    |muss             |Funktional|Als ein User möchte ich ein Feedback, wenn ich die Zahl erraten habe, damit ich weiss, dass ich diese Zahl überhaupt erraten habe.|
+| 9    |kann             |Qualität  |Als ein User möchte ich, dass die Nachrichten vom Bot schön aussehen, damit sie besser sichtbar sind unter den normalen Nachrichten.|
+| 10   |kann             |Rand      |Als ein User möchte ich eine Rolle haben, wenn ich den höchsten highscore habe, damit ich direkt sehe, dass ich der Beste bin.|
+| 11   |muss             |Qualität  |Der Bot benutzt das Zeichen <§> als Befehl anfang, damit der Bot zwischen normalen und nachrichten für den Bot unterscheiden kann.|
 
 ### 1.3 Testfälle
 
@@ -87,6 +87,7 @@ Wir haben uns entschieden, den Random Number Guesser als Discord Bot zu machen, 
 | 2.B  |25.08.2023|Timo Goedertier| 25' | 15' |
 | 3.A  |25.08.2023|Timo Goedertier| 15' | 20' |
 | 3.B  |01.09.2023|Timo Goedertier| 15' | 10' |
+| 5.A  |25.08.2023|Timo Goedertier| 30' | 15' |
 | 6.A  |25.08.2023|Julius Burlet| 10' | 5' |
 | 7.A  |25.08.2023|Julius Burlet| 10' | 5' |
 | 8.A  |25.08.2023|Julius Burlet| 10' | 5' |
