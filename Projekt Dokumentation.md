@@ -71,6 +71,7 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 8.A  |25.08.2023|Julius Burlet|Der Bot gibt ein Feedback, wenn die Zahl erraten wurde.| 10' |
 | 9.A  |08.09.2023|Julius Burlet/Timo Goedertier|Das Design des Bots und seine Nachrichten sehen gut aus.| 30' |
 | 10.A |01.09.2023|Timo Goedertier|Der Bot gibt dem Spieler mit den meisten Punkte die Rolle.| 35' |
+| 10.B |01.09.2023|Julius Burlet|Der Bot nimmt dem Spieler die Rolle weg, wenn er nicht mehr am meisten Punkte hat.| 40' |
 | 11.A |08.09.2023|Julius Burlet|Alle Befehle des Bots fangen mit § an.| 5' |
 
 ## 3 Entscheiden
