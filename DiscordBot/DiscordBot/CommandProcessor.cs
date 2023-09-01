@@ -45,6 +45,17 @@ namespace DiscordBot
                     guess.WithColor(Color.Purple);
                     guess.WithDescription(GuessProcessing(command[1], arg.Author));
                     arg.Channel.SendMessageAsync("", false, guess.Build());
+
+                    var topUser = GetUserWithHighestPoints();
+                    if (topUser.id == author.Id.ToString())
+                    {
+                        var guildUser = arg.Author as SocketGuildUser;
+                        if (guildUser != null)
+                        {
+                            var roleManager = new RoleManager(guildUser.Guild);
+                            await roleManager.AssignRoleToUserAsync(author.Id, "King of Numbers");
+                        }
+                    }
                     break;
                 case "highscore":
                     var targetUser = UserData.LoadUsers().GetValueOrDefault(ParseUserId(command, arg));
