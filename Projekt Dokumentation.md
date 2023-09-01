@@ -70,8 +70,7 @@ Dies ist ein Randomnumberguesser bot für Discord. Mit diversen kleinen features
 | 7.A  |25.08.2023|Julius Burlet|Der Bot gibt ein Feedback, wenn die Zahl zu klein ist.| 10' |
 | 8.A  |25.08.2023|Julius Burlet|Der Bot gibt ein Feedback, wenn die Zahl erraten wurde.| 10' |
 | 9.A  |08.09.2023|Julius Burlet/Timo Goedertier|Das Design des Bots und seine Nachrichten sehen gut aus.| 30' |
-| 10.A |01.09.2023|Timo Goedertier|Der Bot erstellt die gewollte Rolle, wenn er einem Server beitretet.| 20' |
-| 10.B |01.09.2023|Timo Goedertier|Der Bot gibt dem Spieler mit den meisten Punkte die Rolle.| 35' |
+| 10.A |01.09.2023|Timo Goedertier|Der Bot gibt dem Spieler mit den meisten Punkte die Rolle.| 35' |
 | 11.A |08.09.2023|Julius Burlet|Alle Befehle des Bots fangen mit § an.| 5' |
 
 ## 3 Entscheiden
@@ -87,10 +86,14 @@ Wir haben uns entschieden, den Random Number Guesser als Discord Bot zu machen, 
 | 2.B  |25.08.2023|Timo Goedertier| 25' | 15' |
 | 3.A  |25.08.2023|Timo Goedertier| 15' | 20' |
 | 3.B  |01.09.2023|Timo Goedertier| 15' | 10' |
+| 4.A  |01.09.2023|Julius Burlet| 30' | 40' |
 | 5.A  |25.08.2023|Timo Goedertier| 30' | 15' |
 | 6.A  |25.08.2023|Julius Burlet| 10' | 5' |
 | 7.A  |25.08.2023|Julius Burlet| 10' | 5' |
 | 8.A  |25.08.2023|Julius Burlet| 10' | 5' |
+| 9.A  |01.09.2023|Timo Goedertier| 30' | 10' |
+| 10.A |01.09.2023|Timo Goedertier| 35' | 180' |
+| 11.A |08.09.2023|Julius Burlet| 5' | 5' |
 
 
 ### 4.1 Quellen
