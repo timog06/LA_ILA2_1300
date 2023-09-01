@@ -1,8 +1,7 @@
 ﻿using Discord;
-using Discord.Commands;
 using Discord.WebSocket;
-using static filegrabber;
 using System.Text;
+using static filegrabber;
 
 namespace DiscordBot
 {
@@ -34,52 +33,75 @@ namespace DiscordBot
                         UserData.SaveUser(users[arg.Author.Id.ToString()]);
                     }
 
-                    StartNewGame();
-                    arg.Channel.SendMessageAsync($"Successfully Created random number, you can guess now:");
+                    StartNewGame(command);
+                    arg.DeleteAsync();
+                    var randomNumber = new EmbedBuilder();
+                    randomNumber.WithDescription($"Successfully Created random number, you can guess now:");
+                    randomNumber.WithColor(Color.Purple);
+                    arg.Channel.SendMessageAsync("", false, randomNumber.Build());
                     break;
                 case "g":
-                    arg.Channel.SendMessageAsync(GuessProcessing(command[1], arg.Author));
+                    var guess = new EmbedBuilder();
+                    guess.WithColor(Color.Purple);
+                    guess.WithDescription(GuessProcessing(command[1], arg.Author));
+                    arg.Channel.SendMessageAsync("", false, guess.Build());
                     break;
                 case "highscore":
                     var targetUser = UserData.LoadUsers().GetValueOrDefault(ParseUserId(command, arg));
 
                     if (targetUser != null)
                     {
-                        arg.Channel.SendMessageAsync($"{targetUser.displayname} has {targetUser.points} points.");
+                        var userhighscore = new EmbedBuilder();
+                        userhighscore.WithColor(Color.Purple);
+                        userhighscore.WithDescription($"{targetUser.displayname} has {targetUser.points} points.");
+                        arg.Channel.SendMessageAsync("", false, userhighscore.Build());
                     }
                     else
                     {
-                        arg.Channel.SendMessageAsync("User has no points recorded.");
+                        var userhighscore = new EmbedBuilder();
+                        userhighscore.WithColor(Color.Purple);
+                        userhighscore.WithDescription("User has no points recorded.");
+                        arg.Channel.SendMessageAsync("", false, userhighscore.Build());
                     }
                     break;
                 case "highscorelist":
                     users = UserData.LoadUsers();
                     var topUsers = users.Values.OrderByDescending(u => u.points).Take(10).ToList();
 
-                    var response = new StringBuilder("**Top 10 Users by Points:**\n");
+                    var topUsersMessage = new EmbedBuilder()
+                    {
+                        Title = "Top 10 Users by Points",
+                        Description = "Here are the top 10 users by points:",
+                        Color = Color.Purple
+                    };
+
                     int rank = 1;
                     foreach (var eachuser in topUsers)
                     {
-                        response.AppendLine($"{rank}. {eachuser.displayname}: {eachuser.points} points"); 
+                        topUsersMessage.AddField($"{rank}. {eachuser.displayname}", $"{eachuser.points} points");
                         rank++;
                     }
 
-                    arg.Channel.SendMessageAsync(response.ToString());
+                    topUsersMessage.WithFooter("®Your Bot Name - 01.09.2023");
+
+                    arg.Channel.SendMessageAsync(embed: topUsersMessage.Build());
                     break;
                 case "help":
                     var helpMessage = new EmbedBuilder()
                     {
-                        Title = "Number Guesser Commands helps",
+                        Title = "Number Guesser Commands help",
                         Description = "This is a list for all available commands.",
                         Color = Color.Purple
                     };
 
                     helpMessage.AddField("§rnd", "Generate a random number.");
+                    helpMessage.AddField("§rnd [number]", "Make your own number for others to guess.");
                     helpMessage.AddField("§g", "Guess the generated number.");
                     helpMessage.AddField("§highscore", "Show your own highscore.");
                     helpMessage.AddField("§highscore @user", "Show the highscore of the mentioned user.");
                     helpMessage.AddField("§highscorelist", "Show the Top 10 highscores on this server.");
                     helpMessage.AddField("§help", "Show this list.");
+                    helpMessage.WithFooter("®Number Guesser Bot - 2023");
 
                     arg.Channel.SendMessageAsync(embed: helpMessage.Build());
                     break;
@@ -96,12 +118,40 @@ namespace DiscordBot
             {
                 return arg.Author.Id.ToString();
             }
-            
+
         }
-        void StartNewGame()
+        void StartNewGame(string[] number)
         {
-            Random rnd = new();
-            game = new() { randomNumber = rnd.Next(1, 101) };
+            try
+            {
+                if (number[1] != null)
+                {
+                    game = new() { randomNumber = ParseNumberBetweenBars(number[1]) };
+                }
+            }
+            catch
+            {
+                Random rnd = new();
+                game = new() { randomNumber = rnd.Next(1, 101) };
+            }
+
+
+        }
+        static int ParseNumberBetweenBars(string input)
+        {
+            int startIndex = input.IndexOf("||") + 2;
+            int endIndex = input.LastIndexOf("||");
+
+            if (startIndex >= 0 && endIndex >= 0 && endIndex > startIndex)
+            {
+                string numberStr = input.Substring(startIndex, endIndex - startIndex);
+                if (int.TryParse(numberStr, out int parsedNumber))
+                {
+                    return parsedNumber;
+                }
+            }
+
+            throw new ArgumentException("Invalid input format.");
         }
 
         string GuessProcessing(string guess, SocketUser author)
@@ -124,7 +174,7 @@ namespace DiscordBot
                 var user = UserData.LoadUsers().GetValueOrDefault(author.Id.ToString());
                 if (user != null)
                 {
-                    user.points += 20; 
+                    user.points += 20;
                     UserData.SaveUser(user);
                 }
                 game = null;
