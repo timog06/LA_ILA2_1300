@@ -10,7 +10,7 @@ namespace DiscordBot
         public Randomnumberguesser game;
 
 
-        public void Choosing(SocketMessage arg)
+        public void Choosing(SocketMessage arg, SocketGuild guild)
         {
             var guildUser = arg.Author as SocketGuildUser;
             string displayName = guildUser?.Nickname ?? arg.Author.Username;
@@ -44,7 +44,7 @@ namespace DiscordBot
                 case "g":
                     var guess = new EmbedBuilder();
                     guess.WithColor(Color.Purple);
-                    guess.WithDescription(GuessProcessing(command[1], arg.Author));
+                    guess.WithDescription(GuessProcessing(command[1], arg.Author, guild));
                     arg.Channel.SendMessageAsync("", false, guess.Build());
 
 
@@ -85,7 +85,7 @@ namespace DiscordBot
                         rank++;
                     }
 
-                    topUsersMessage.WithFooter("®Your Bot Name - 01.09.2023");
+                    topUsersMessage.WithFooter("®Number Guesser Bot - 2023");
 
                     arg.Channel.SendMessageAsync(embed: topUsersMessage.Build());
                     break;
@@ -157,7 +157,7 @@ namespace DiscordBot
             throw new ArgumentException("Invalid input format.");
         }
 
-        string GuessProcessing(string guess, SocketUser author)
+        string GuessProcessing(string guess, SocketUser author, SocketGuild guild)
         {
             if (game == null)
             {
@@ -179,9 +179,8 @@ namespace DiscordBot
                 {
                     user.points += 20;
                     UserData.SaveUser(user);
-                    SocketGuild _guild = null;
-                    RoleManager roleManager = new RoleManager(_guild);
-                    roleManager.AssignKingRole();
+                    RoleManager roleManager = new RoleManager();
+                    roleManager.AssignKingRole(guild);
                 }
 
                 game = null;

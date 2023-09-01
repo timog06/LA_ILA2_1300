@@ -6,14 +6,7 @@ namespace DiscordBot
 {
     class RoleManager
     {
-        private SocketGuild _guild = null;
-
-        public RoleManager(SocketGuild guild)
-        {
-            _guild = guild;
-        }
-
-        public async Task AssignKingRole()
+        public async Task AssignKingRole(SocketGuild _guild)
         {
             Dictionary<string, User> users = UserData.LoadUsers();
             User topUser = users.Values.OrderByDescending(userpoints => userpoints.points).FirstOrDefault();
