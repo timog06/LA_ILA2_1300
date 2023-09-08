@@ -99,7 +99,7 @@ namespace DiscordBot
 
                     helpMessage.AddField("§rnd", "Generate a random number.");
                     helpMessage.AddField("§rnd ```||number||```", "Make your own number for others to guess.");
-                    helpMessage.AddField("§g", "Guess the generated number.");
+                    helpMessage.AddField("§g number", "Guess the generated number.");
                     helpMessage.AddField("§highscore", "Show your own highscore.");
                     helpMessage.AddField("§highscore @user", "Show the highscore of the mentioned user.");
                     helpMessage.AddField("§highscorelist", "Show the Top 10 highscores on this server.");
