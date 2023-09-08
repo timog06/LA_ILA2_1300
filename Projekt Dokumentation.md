@@ -135,4 +135,6 @@ Das ```using System.Text.Json.Serialization;``` wurde von ChatGPT generiert, wie
 
 ## 6 Auswerten
 
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
+Portfolio Timo Goedertier: https://portfolio.bbbaden.ch/view/view.php?id=31570
+
+Portfolio Julius Burlet:
