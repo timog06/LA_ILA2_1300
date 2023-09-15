@@ -6,7 +6,7 @@
 | ----- | ------- | ------------------------------------------------------------ |
 |18.08.2023|0.0.1| Wir haben mit dem Projekt angefangen und den Bot erstellt und aufgesetzt.|
 |25.08.2023|0.1.0| Der Bot funktioniert jetzt und hat schon seine ersten funktionen.|
-||||
+|01.09.2023|1.0.0| Der Bot funktioniert nun vollständig mit allen vorgesehenen Funktionen.|
 
 ## 1 Informieren
 
