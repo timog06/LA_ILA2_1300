@@ -1,4 +1,4 @@
-#Demonstrations Videos
+# Demonstrations Videos
 
 ### Discord Bot Demonstration: §help, §highscore, §highscorelist
 
